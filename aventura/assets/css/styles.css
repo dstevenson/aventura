@@ -1,0 +1,359 @@
+/* ------ Reset Import --------------------------------------------------- */
+@import url('reset.css');
+
+
+/* ------ Global Styles --------------------------------------------------- */
+body { 
+    background-color: #D1D2BE;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color:#666;
+}
+
+ul.bbList {list-style-type:none;margin:0;padding:0}
+ul.bbList li {margin:0;padding:0;padding-left:16px;background:url('../images/blue-bullet.png') no-repeat 0 4px}
+
+ul.gbList {list-style-type:none;margin:0;padding:0}
+ul.gbList li {margin:0;padding:0;padding-left:16px;background:url('../images/green-bullet.png') no-repeat 0 4px}
+
+ul.gybList {list-style-type:none;margin:0;padding:0}
+ul.gybList li {margin:0;padding:0;padding-left:16px;background:url('../images/grey-bullet.png') no-repeat 0 4px}
+
+ul.rbList {list-style-type:none;margin:0;padding:0}
+ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bullet.png') no-repeat 0 4px}
+
+.dark {color:#333}
+.date {color:#666}
+.bold {font-weight:bold}
+
+/* ------ Wrapper --------------------------------------------------- */
+
+#wrapper { 
+    width: 960px; 
+    margin: 0 auto;
+} 
+
+#contentWrapper { 
+    width: 960px;
+    hieght: 636px;
+    background:white url(../images/mainBG.png) no-repeat left top;
+} 
+
+/* ------ Top Links --------------------------------------------------- */
+
+#topLinks {
+    float: left;
+    padding-left: 580px;
+    height: 39px;
+    margin: 0;
+}
+
+/* ------ Header --------------------------------------------------- */
+
+#header {
+    width: 960px;
+    float: left;
+    padding: 18px 0 20px 0;
+}
+
+/* ------ Header -> Logo ------ */
+
+#logo a {
+    float: left;
+    width: 198px;
+    height: 90px;
+    background: url("../images/aventura-construction-corp-logo.png") no-repeat;
+    margin-left: 56px;
+}
+
+/* ------ Header -> Navigation ------ */
+
+#navigation {
+    float: right;
+    margin: 38px 60px 0 0;
+    color: #999999;
+}
+
+    .nav, .nav ul { 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 100;
+        color: #999999;
+        position: relative;
+    }
+    .nav li {
+        border-left: 1px solid #999;
+        float: left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .nav li a, .nav li a:link, .nav li a:active, .nav li a:visited {
+        font: bold 1.22em/25px Arial, Helvetica, sans-serif;
+        color: #999999;
+        display: block;
+        padding: 0 9px;
+        text-decoration: none;
+    }
+
+    .nav li a:hover {
+        color: #333;	
+    }
+
+    #nav-one li:hover a, 
+    #nav-one li.sfHover a {
+        color: #333;
+    }
+
+    #nav-one li:hover ul a, 
+    #nav-one li.sfHover ul a {
+        color: #333;	
+    }
+
+    #nav-one li:hover ul a:hover, 
+    #nav-one li.sfHover ul a:hover {
+        color: #333;	
+    }
+
+    .nav ul {
+        list-style: none;
+        margin: 0;
+        position: absolute;
+        top: -999em;
+        left: -1px;
+    }
+
+    .nav li:hover ul,
+    .nav li.sfHover ul {
+        background: #FFFFFF;
+        border-left: 1px solid #999;
+        top: 25px;
+    }
+
+    .nav ul li {
+        border: 0;
+        float: none;
+    }
+
+    .nav ul a {
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+
+    .nav ul a:hover {
+        background: #ccc;
+        color: #000;
+    }
+
+
+/* ------ Content -> Structure --------------------------------------------------- */
+
+#content {
+    width: 960px;
+    float: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#666;
+}
+
+#leftContent {
+    float: left;
+    width:292px;
+}
+
+#rightContent {
+    float: left;
+    width:611px;
+    margin-bottom: 20px;
+}
+
+/* ------ Content -> Main Page --------------------------------------------------- */
+
+
+#leftContentMain {
+	color:#fff;
+        height:476px;
+        background:url('../images/home-blurb-bg.jpg') no-repeat;
+}
+
+#leftContentMain p.pMain {
+    font-size:12px;
+    padding: 0 15px 15px 55px;
+    line-height:16px;
+    color:#fff;
+}
+
+#rightContentMain { 
+    left:0;
+    width:611px;
+    color:#666; 
+}
+
+#mainSpotLight {
+    float: left;
+    width: 300px;
+    border-right: 1px solid #D1D2BE; 
+}
+
+#mainSpotLight img.attachment-spotlight {
+    margin: 5px 5px 0 55px;
+    float: left;
+    vertical-align:top;
+}
+
+#mainRecentNews {
+    float: left;
+    width: 300px;
+}
+/* ------ Content -> Inner Pages --------------------------------------------------- */
+
+#leftContent h5 {
+    font-size:18px;
+    margin:0;
+    padding: 25px 0 0 55px;
+    font-weight:normal
+}
+
+#leftContent p {
+    font-size:16px;
+    padding: 0 15px 15px 55px;
+    line-height:18px;
+    color:#666;
+}
+
+#leftContent img {
+    margin: 0 0 15px 55px;
+}
+
+#rightContent {
+    color:#000;
+}
+
+#rightContent h1, h2, h3, h4, h5 {
+    padding: 10px 0 0 55px;
+    font-weight:bold;
+}
+#rightContent h1 {
+    font-size:18px;
+    line-height: 20px;
+}
+
+#rightContent h2 {
+    font-size:12px;
+    line-height: 14px;
+}
+
+#rightContent h3 {
+    font-size:14px;
+    line-height: 16px;
+}
+
+#rightContent h4 {
+    font-size:16px;
+    line-height: 18px;
+}
+
+#rightContent h5 {
+    background:url('../images/arrow-indent.png') no-repeat 0 0;
+    font-size:18px;
+    padding:2px 0 0 55px;
+    line-height: 25px;
+    font-weight:normal;
+}
+
+#rightContent p {
+    padding:0;
+    margin: 10px 0 0 55px;
+    line-height:16px;
+}
+
+#rightContent ul {
+    list-style-type:none;
+    margin:10px 0 0 50px;
+    padding:0
+}
+
+#rightContent ul li {
+    margin:0;
+    padding:0;
+    padding-left:16px;
+    line-height: 16px;
+    background:url('../images/blue-bullet.png') no-repeat 0 4px;
+}
+
+#rightContent a.postTitle {
+    font-size:18px;
+    font-weight:normal;
+    color: #999999;
+}
+
+#rightContent a:hover.postTitle {
+    color: #000000;
+}
+
+#servicesPageTop {
+    margin-bottom: 15px;
+}
+
+#newsPost {
+    display: block;
+    margin: 10px 0 0 55px;
+    width: 580px;
+}
+
+#newsPost img.attachment-small {
+    float: right;
+    vertical-align:top;
+}
+
+#newsPost p {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 400px;
+}
+#newsExcerpt {
+    float:left;
+}
+#newsThumbnail {
+    float: right;
+}
+/* ------ Footer --------------------------------------------------- */
+
+#footer {
+	width:960px;
+	font-size:12px;
+        margin-top: 10px;
+}
+#footer a {
+    color:#666;
+    text-decoration:none;
+}
+
+#footer a:hover {
+    color:#666;
+    text-decoration:underline;
+}
+
+#footer a.email {
+    background:url('../images/envelope.png') no-repeat 100% 3px;
+    text-decoration:none;
+    padding:0 18px 0 0;
+}
+
+#footer a.email:hover {
+    text-decoration:underline;
+}
+
+#footerCopyright {
+    float: left;
+}
+
+#footerContact {
+    float: right;
+    text-align: right;
+}
