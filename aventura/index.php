@@ -68,7 +68,7 @@
 
                         <?php endif; ?>
 
-                        <p><a href="#">all news/events &raquo;</a></p>
+                        <p><a href="<?php echo home_url(); ?>/news-and-events/">all news/events &raquo;</a></p>
                     </div>
                                 
 

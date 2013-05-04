@@ -33,8 +33,8 @@
 
                 <h2>Opps... you've reached the end of the Internet. Just kidding, you probably entered the wrong address. Hit the "back" button.</h2>
 
-            <?php endif; //END: The Loop ?>
-                
+            <?php endif; //END: The Loop ?>  
+          
             </div> 
         
         </div>
