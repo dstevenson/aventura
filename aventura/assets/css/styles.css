@@ -26,6 +26,40 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 .date {color:#666}
 .bold {font-weight:bold}
 
+#content h1, h2, h3, h4, h5 {
+    padding: 10px 0 0 55px;
+    font-weight:bold;
+}
+
+#content h1 {
+    font-size:18px;
+    line-height: 20px;
+}
+
+#content h2 {
+    font-size:16px;
+    line-height: 18px;
+}
+
+#content h3 {
+    font-size:14px;
+    line-height: 16px;
+}
+
+#content h4 {
+    font-size:18px;
+    font-weight:normal;
+    line-height: 25px;
+}
+
+#content h5 {
+    background:url('../images/arrow-indent.png') no-repeat 0 0;
+    font-size:18px;
+    padding:2px 0 0 55px;
+    line-height: 25px;
+    font-weight:normal;
+}
+
 /* ------ Wrapper --------------------------------------------------- */
 
 #wrapper { 
@@ -159,6 +193,7 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
     font-family:Arial, Helvetica, sans-serif;
     font-size:12px;
     color:#666;
+    padding-bottom: 20px;
 }
 
 #leftContent {
@@ -186,6 +221,13 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
     padding: 0 15px 15px 55px;
     line-height:16px;
     color:#fff;
+}
+
+#leftContentMain h4 {
+    font-size:18px;
+    margin:0;
+    padding: 25px 0 0 55px;
+    font-weight:normal;
 }
 
 #rightContentMain { 
@@ -219,10 +261,18 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
     font-weight:normal
 }
 
-#leftContent p {
+#leftContent h1 {
     font-size:16px;
     padding: 0 15px 15px 55px;
     line-height:18px;
+    color:#666;
+    font-weight: normal;
+}
+
+#leftContent p {
+    font-size:12px;
+    padding: 0 15px 15px 55px;
+    line-height:14px;
     color:#666;
 }
 
@@ -232,38 +282,6 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 
 #rightContent {
     color:#000;
-}
-
-#rightContent h1, h2, h3, h4, h5 {
-    padding: 10px 0 0 55px;
-    font-weight:bold;
-}
-#rightContent h1 {
-    font-size:18px;
-    line-height: 20px;
-}
-
-#rightContent h2 {
-    font-size:12px;
-    line-height: 14px;
-}
-
-#rightContent h3 {
-    font-size:14px;
-    line-height: 16px;
-}
-
-#rightContent h4 {
-    font-size:16px;
-    line-height: 18px;
-}
-
-#rightContent h5 {
-    background:url('../images/arrow-indent.png') no-repeat 0 0;
-    font-size:18px;
-    padding:2px 0 0 55px;
-    line-height: 25px;
-    font-weight:normal;
 }
 
 #rightContent p {

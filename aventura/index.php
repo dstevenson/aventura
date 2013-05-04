@@ -5,7 +5,7 @@
             <div id="leftContent">
                 
                 <div id="leftContentMain">
-                    <h5>Building Your Vision</h5>
+                    <h4>Building Your Vision</h4>
                     <p class="pMain">Reliably, On-Time & Within Budget</p>
                     <p class="pMain">Aventura is a high caliber construction company with diverse expertise equipped to handle any project scope. Our skills & computerized management systems simplify processes so we can provide solutions and direction. These differentiators enable us to minimize re-work and lower costs. Let our team of experts handle your project: commercial or residential, new or renovation. No project is too complex.</p>
                 </div> 
