@@ -29,7 +29,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
     add_image_size('large', 700, 200, true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 150, '', true); // Small Thumbnail
+    add_image_size('small', 150, 100, true); // Small Thumbnail
     add_image_size('project', 619, 284, true); // Projects Thumbnail
     add_image_size('spotlight', 96, 76, true); // Custom Thumbnail Size call using the_post_thumbnail('projects');
 
@@ -127,3 +127,16 @@ class truncate{
 		return $truncateString;
 	}
 }
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'News Sidebar',
+		'id' => 'news_sidebar',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );

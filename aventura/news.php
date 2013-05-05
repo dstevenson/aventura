@@ -30,7 +30,7 @@ get_header(); ?>
                 
                 <div style="clear:both;"></div>
                 
-                <hr style="margin-bottom: 15px;"></hr>
+                <hr style="margin-top: 10px; margin-bottom: 15px;"></hr>
                 
                 <?php endwhile; wp_reset_query(); ?>
                 

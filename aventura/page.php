@@ -24,8 +24,9 @@
                     <h5><?php the_title(); ?></h5>
 
                     <?php the_content(); ?>
-
+                    <div id="rightContentBottom">
                     <?php the_field('bottom_of_page'); ?>
+                    </div>
                     
                 <?php endwhile; ?>
                     

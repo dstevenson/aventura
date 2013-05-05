@@ -75,6 +75,7 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
     width: 960px;
     hieght: 636px;
     background:white url(../images/mainBG.png) no-repeat left top;
+    min-height:636px;
 } 
 
 /* ------ Top Links --------------------------------------------------- */
@@ -329,13 +330,14 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 #newsPost {
     display: block;
     margin: 10px 0 0 55px;
-    width: 570px;
+    width: 611px;
 }
 
 #rightContent a.postTitle {
     font-size:18px;
     font-weight:normal;
     color: #000000;
+    display: block;
 }
 
 #rightContent a:hover.postTitle {
@@ -351,14 +353,42 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 #newsPost p {
     float: left;
     margin: 10px 0 15px 0;
-    width: 430px;
+    width: 420px;
 }
 #newsExcerpt {
     float:left;
+    width: 420px;
 }
 #newsThumbnail {
     float: right;
+    width: 150px;
+    padding-right: 30px;
 }
+
+#rightContent .servicesListTable {
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+#rightContent .servicesListTable td {
+    padding:3px 10px 3px 0;
+    vertical-align: middle;
+}
+
+#rightContent .servicesListTable a:link, #rightContent .servicesListTable a:visited {
+    text-decoration:none;
+    color:#000;
+}
+
+#rightContent .servicesListTable a:active, #rightContent .servicesListTable a:hover {
+    color:#f07f59;
+}
+
+#rightContentBottom {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
 
 /* ------ Content -> Posts --------------------------------------------------- */
 

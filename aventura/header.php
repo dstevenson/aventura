@@ -84,7 +84,7 @@
             <div id="navigation">
                 
             	<ul id="nav-one" class="nav">
-                    <li><a href="<?php echo home_url(); ?>" title="Home">HOME</a></li>
+                    <li style="border-left: none;"><a href="<?php echo home_url(); ?>" title="Home">HOME</a></li>
                     <?php wp_nav_menu( array('menu' => 'Main Navigation', 
                         'theme_location'  => '',
                         'container'       => 'false',

@@ -28,7 +28,7 @@
 
             <?php endif; //END: The Loop ?>
                 
-                <hr></hr>
+                <hr style="margin-top: 15px;"></hr>
                 <p><a href="<?php echo home_url(); ?>/news-and-events/">&laquo; Back to All News/Events</a></p>
             
             </div> 
