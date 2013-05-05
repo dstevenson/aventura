@@ -385,11 +385,23 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 }
 
 #rightContentBottom {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 55px;
 }
 
+#rightContentBottom td {
+    vertical-align: middle;
+    text-align: center;
+    
+}
 
+#rightContentBottom td a {
+    text-decoration: none;
+}
+
+#rightContentBottom td a:hover {
+    color: #000000;
+}
 /* ------ Content -> Posts --------------------------------------------------- */
 
 #postFeaturedImage {
