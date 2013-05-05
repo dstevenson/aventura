@@ -402,6 +402,29 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 #rightContentBottom td a:hover {
     color: #000000;
 }
+
+#leftContent ul {
+    list-style-type:none;
+    margin: 10px 0 0 55px;
+    padding:0;
+}
+
+#leftContent ul li {
+    padding-left:16px;
+    margin-bottom: 10px;
+    background:url('../images/grey-bullet.png') no-repeat 0 4px;
+}
+
+#leftContent ul li .post-date{
+    display: block;
+    font-style: italic;
+    padding-top: 4px;
+}
+
+#leftContent ul li a {
+    text-decoration: none;
+}
+
 /* ------ Content -> Posts --------------------------------------------------- */
 
 #postFeaturedImage {
