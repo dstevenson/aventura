@@ -66,11 +66,11 @@
 <div id="wrapper">
         
     <div id="topLinks">
-        <a href="http://www.facebook.com/#!/pages/Aventura-Construction-Corp/158503274168539" target="_blank" title="Find Us on Facebook"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="Facebook" border="0" /></a>
-        <a href="http://www.linkedin.com/pub/aventura-construction/2a/229/4a9" target="_blank" title="Join Our Network on LinkedIn"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedIn.png" alt="LinkedIn"/></a>
-        <a href="<?php echo home_url(); ?>/portal/customers" title="Customer Portal"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/customers.png" alt="FTP Access"/></a>
-        <a href="<?php echo home_url(); ?>/portal/sub-contractors-and-vendors"  title="Sub-Contractor and Vendor Portal"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/subs_vendors.png" alt="FTP Access"/></a> 
-        <a href="<?php echo home_url(); ?>/portal/employees/" title="Employee Portal"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/employees.png" alt="FTP Access"/></a> 
+        <a href="http://www.facebook.com/#!/pages/Aventura-Construction-Corp/158503274168539" target="_blank" title="Find Us on Facebook" border="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt="Facebook" border="0" /></a>
+        <a href="http://www.linkedin.com/pub/aventura-construction/2a/229/4a9" target="_blank" title="Join Our Network on LinkedIn" border="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedIn.png" alt="LinkedIn"/></a>
+        <a href="<?php echo home_url(); ?>/portal/customers" title="Customer Portal" border="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/customers.png" alt="FTP Access"/></a>
+        <a href="<?php echo home_url(); ?>/portal/sub-contractors-and-vendors"  title="Sub-Contractor and Vendor Portal" border="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/subs_vendors.png" alt="FTP Access"/></a> 
+        <a href="<?php echo home_url(); ?>/portal/employees/" title="Employee Portal" border="0"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/employees.png" alt="FTP Access"/></a> 
     </div>
     
     <div style="clear:both;"></div>
