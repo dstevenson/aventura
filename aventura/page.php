@@ -9,16 +9,20 @@
             <div id="leftContent">
                
                 <?php
-                $leftColImage = the_field('left_column_of_page_image');
-                if ($leftColImage == ''){ } else { ?>
-                <img src="<?php the_field('left_column_of_page_image'); ?>"/>
-                <?php } ?>
-               
-               <?php
-                $leftCol = the_field('left_column_of_page');
-                if ($leftCol == ''){ } else { ?>     
-               <?php the_field('left_column_of_page'); ?>
-               <?php } ?>
+                if (get_field('left_column_of_page_image')){
+                ?>
+                    <img src="<?php the_field('left_column_of_page_image'); ?>"/>
+                <?php
+                } else {
+                    //nop
+                }
+
+                if (get_field('left_column_of_page')){
+                    the_field('left_column_of_page');
+                } else {
+                    // nop
+                }
+                ?>
                     
             </div> 
             
