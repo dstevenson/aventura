@@ -7,10 +7,19 @@
                 <?php while (have_posts()) : the_post(); //BEGIN: The Loop ?>
             
             <div id="leftContent">
-                
-               <img src="<?php the_field('left_column_of_page_image'); ?>"/>
+               
+                <?php
+                $leftColImage = the_field('left_column_of_page_image');
+                if ($leftColImage == ''){ } else { ?>
+                <img src="<?php the_field('left_column_of_page_image'); ?>"/>
+                <?php } ?>
+               
+               <?php
+                $leftCol = the_field('left_column_of_page');
+                if ($leftCol == ''){ } else { ?>     
                <?php the_field('left_column_of_page'); ?>
-                
+               <?php } ?>
+                    
             </div> 
             
             <div id="rightContent">

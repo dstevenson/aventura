@@ -10,6 +10,10 @@ body {
     color:#666;
 }
 
+img {
+  border-width: 0;
+}
+
 a {font-size:12px;font-weight:bold;color:#666;}
 a:visited {font-size:12px;font-weight:bold;color:#666;}
 a:active, a:hover {color:#999;}
@@ -246,6 +250,7 @@ ul.rbList li {margin:0;padding:0;padding-left:16px;background:url('images/red-bu
 #mainSpotLight {
     float: left;
     width: 300px;
+    padding-right: 10px;
     border-right: 1px solid #D1D2BE; 
 }
 
