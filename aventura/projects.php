@@ -9,17 +9,58 @@ get_header(); ?>
             <div id="leftContent">
                 <h1>Click on a project to view pictures.</h1>
                 <h4>General Construction</h4>
+                <ul>
                 <?php
-                    $args =
+                    $args = array(
+                        'tag' => 'general-construction',
+                        'post_type' => 'galleryfolder',
+                        'posts_per_page' => 5,
+                        'orderby' => 'date',
+                        'order' => 'DESC'
+                    );
                     $query = new WP_Query($args);
+                    while ($query->have_posts()) {
+                        $query->the_post();
+                        echo '<li><a href="general-construction/' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+                    }
                 ?>
-                <ul><li>link to proj 1</li></ul>
+                </ul>
                 
                 <h4>Environmental Services</h4>
-                <ul><li>link to proj 2</li></ul>
+                <ul>
+                <?php
+                $args = array(
+                    'tag' => 'environmental-services',
+                    'post_type' => 'galleryfolder',
+                    'posts_per_page' => 5,
+                    'orderby' => 'date',
+                    'order' => 'DESC'
+                );
+                $query = new WP_Query($args);
+                while ($query->have_posts()) {
+                    $query->the_post();
+                    echo '<li><a href="environmental-services/' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+                }
+                ?>
+                </ul>
                 
                 <h4>Maintenance & Service</h4>
-                <ul><li>link to proj 3</li></ul>
+                <ul>
+                <?php
+                $args = array(
+                    'tag' => 'maintenance-service',
+                    'post_type' => 'galleryfolder',
+                    'posts_per_page' => 5,
+                    'orderby' => 'date',
+                    'order' => 'DESC'
+                );
+                $query = new WP_Query($args);
+                while ($query->have_posts()) {
+                    $query->the_post();
+                    echo '<li><a href="maintenance-service/' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+                }
+                ?>
+                </ul>
             </div> 
             
             <div id="rightContent">

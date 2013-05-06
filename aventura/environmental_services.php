@@ -40,14 +40,15 @@ $page_id = $wp_query->query_vars['page'];
     <div id="leftContent">
         <ul>
             <?php
+            $tag_name = $post->post_name;
             $args = array(
-                'tag' => $post->post_name,
+                'tag' => $tag_name,
                 'post_type' => 'galleryfolder'
             );
             $query = new WP_Query( $args );
             while ( $query->have_posts() ) {
                 $query->the_post();
-                echo '<li><a href="' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+                echo '<li><a href="/aventura-projects/' . $tag_name . '/' . get_the_ID() . '">' . get_the_title() . '</a></li>';
             };
             ?>
         </ul>
