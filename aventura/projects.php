@@ -9,6 +9,10 @@ get_header(); ?>
             <div id="leftContent">
                 <h1>Click on a project to view pictures.</h1>
                 <h4>General Construction</h4>
+                <?php
+                    $args =
+                    $query = new WP_Query($args);
+                ?>
                 <ul><li>link to proj 1</li></ul>
                 
                 <h4>Environmental Services</h4>

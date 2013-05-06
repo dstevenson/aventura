@@ -70,15 +70,22 @@ $page_id = $wp_query->query_vars['page'];
             <div id="project-slides">
                 <?php
 
-
-                $dir = new DirectoryIterator(dirname(realpath(__FILE__))."/../../uploads/projects/{$post->post_name}/");
+                $path = dirname(realpath(__FILE__))."/../../uploads/projects/{$post->post_name}/";
+                $dir = new DirectoryIterator($path);
 
                 /**
                  * @var $fileinfo SplFileInfo
                  */
                 foreach ($dir as $fileinfo) {
                     if ($fileinfo->isFile()) {
-                        echo '<img src="/wp-content/uploads/projects/'.$post->post_name.'/_cache/'.$fileinfo->getBasename(".{$fileinfo->getExtension()}").'-619x284.' . $fileinfo->getExtension() . '" border="0" />';
+                        $ext = $fileinfo->getExtension();
+                        $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
+                        $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
+                        if (file_exists($real_thumb_path)) {
+                            echo '<img src="/wp-content/uploads/projects/'.$post->post_name.'/' . $thumb_path . '" border="0" />';
+                        } else {
+                            echo '<img src="/wp-content/uploads/projects/'.$post->post_name.'/' . $fileinfo->getFilename() . '" border="0" />';
+                        }
                     }
                 }
                 ?>
