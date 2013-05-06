@@ -24,7 +24,7 @@
                      */
                     foreach ($dir as $fileinfo) {
                         if ($fileinfo->isFile()) {
-                            echo '<img src="wp-content/uploads/projects/main-page-featured/'.$fileinfo->getFilename().'" border="0" />';
+                            echo '<img src="wp-content/uploads/projects/main-page-featured/_cache/'.$fileinfo->getBasename(".{$fileinfo->getExtension()}").'-619x284.'.$fileinfo->getExtension().'" border="0" />';
                         }
                     }
                 ?>
