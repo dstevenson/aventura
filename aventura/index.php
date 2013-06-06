@@ -25,8 +25,8 @@
                     foreach ($dir as $fileinfo) {
                         if ($fileinfo->isFile()) {
                             $ext = $fileinfo->getExtension();
-                            $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
-                            $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
+                            $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-611x400.$ext";
+                            $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-611x400.$ext";
                             if (file_exists($real_thumb_path)) {
                                 echo '<img src="wp-content/uploads/projects/main-page-featured/' . $thumb_path . '" border="0" />';
                             } else {
