@@ -47,14 +47,20 @@ $page_id = $wp_query->query_vars['page'];
                 $path = dirname(realpath(__FILE__))."/../../uploads/projects/{$post->post_name}/";
                 $dir = new DirectoryIterator($path);
 
+                if ($post->post_name === 'main-page-featured') {
+                    $size = "619x284";
+                } else {
+                    $size = "611x400";
+                }
+
                 /**
                  * @var $fileinfo SplFileInfo
                  */
                 foreach ($dir as $fileinfo) {
                     if ($fileinfo->isFile()) {
                         $ext = $fileinfo->getExtension();
-                        $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
-                        $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
+                        $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-$size.$ext";
+                        $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-$size.$ext";
                         if (file_exists($real_thumb_path)) {
                             echo '<img src="/wp-content/uploads/projects/'.$post->post_name.'/' . $thumb_path . '" border="0" />';
                         } else {
