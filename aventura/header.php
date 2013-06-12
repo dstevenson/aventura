@@ -59,8 +59,8 @@
         });
 
         $("#project-slides").slidesjs({
-            width: 619,
-            height: 284,
+            width: 611,
+            height: 400,
             navigation: true,
             play: {
                 active: false,

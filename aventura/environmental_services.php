@@ -47,11 +47,7 @@ $page_id = $wp_query->query_vars['page'];
                 $path = dirname(realpath(__FILE__))."/../../uploads/projects/{$post->post_name}/";
                 $dir = new DirectoryIterator($path);
 
-                if ($post->post_name === 'main-page-featured') {
-                    $size = "619x284";
-                } else {
-                    $size = "611x400";
-                }
+                $size = "611x400";
 
                 /**
                  * @var $fileinfo SplFileInfo
