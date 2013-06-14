@@ -7,7 +7,7 @@ get_header(); ?>
         <div id="content">
             
             <div id="leftContent">
-                <h1>Click on a project to view pictures.</h1>
+                <h1>Our portfolio is a testimony to Aventura Construction’s expert design and quality craftsmanship. Please explore our recent work.</h1>
                 <h4>General Construction</h4>
                 <ul>
                 <?php
@@ -82,3 +82,4 @@ get_header(); ?>
         </div>
         
         <div style="clear:both;"></div>
+<?php get_footer(); ?>

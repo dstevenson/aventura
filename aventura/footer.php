@@ -2,7 +2,7 @@
         
     <div id="footer">
         <div id="footerCopyright">
-            &copy; 2013 Aventura Construction Corp | <a href="#privacy" id="pLink">Privacy Policy</a> | <a href="http://www.dragex.info/wp-admin" title="Admin">Admin</a>
+            &copy; 2013 Aventura Construction Corp | <a href="#privacy" id="pLink">Privacy Policy</a> | <a href="http://www.aventuracorp.com/wp-admin" title="Admin">Admin</a>
         </div>
         <div id="footerContact">
             631-654-0660 | <a href="mailto:" title="Email" class="email">Email</a>

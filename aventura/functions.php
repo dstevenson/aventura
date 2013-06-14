@@ -30,7 +30,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 619, 284, true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 150, 100, true); // Small Thumbnail
-    add_image_size('project', 619, 284, true); // Projects Thumbnail
+    add_image_size('project', 611, 400, true); // Projects Thumbnail
     add_image_size('spotlight', 96, 76, true); // Custom Thumbnail Size call using the_post_thumbnail('projects');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use

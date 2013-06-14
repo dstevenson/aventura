@@ -16,7 +16,7 @@
                 <div id="slides">
                 <?php
 
-                    $path = dirname(realpath(__FILE__)).'/../../uploads/projects/main-page-featured/';
+                    $path = dirname(realpath(__FILE__)).'/../../uploads/projects/main-page-featured-2/';
                     $dir = new DirectoryIterator($path);
 
                     /**
@@ -24,13 +24,13 @@
                      */
                     foreach ($dir as $fileinfo) {
                         if ($fileinfo->isFile()) {
-                            $ext = $fileinfo->getExtension();
+                            $ext = pathinfo($fileinfo->getFilename(), PATHINFO_EXTENSION);
                             $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
                             $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-619x284.$ext";
                             if (file_exists($real_thumb_path)) {
-                                echo '<img src="wp-content/uploads/projects/main-page-featured/' . $thumb_path . '" border="0" />';
+                                echo '<img src="wp-content/uploads/projects/main-page-featured-2/' . $thumb_path . '" border="0" />';
                             } else {
-                                echo '<img src="wp-content/uploads/projects/main-page-featured/' . $fileinfo->getFilename() . '" border="0" />';
+                                echo '<img src="wp-content/uploads/projects/main-page-featured-2/' . $fileinfo->getFilename() . '" border="0" />';
                             }
                         }
                     }

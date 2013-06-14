@@ -9,3 +9,52 @@
 #project-slides {
     display: none;
 }
+
+#project-slides ul li {
+padding-bottom: 0;
+padding-left: 0;
+background: #ffffff;
+}
+
+#project-slides .slidesjs-container {
+  margin-bottom:10px;
+}
+
+#project-slides .slidesjs-previous {
+  margin-right: 5px;
+  float:left;
+}
+#project-slides .slidesjs-next {
+  margin-right: 5px;
+  float:left;
+}
+
+#project-slides .slidesjs-pagination {
+    margin:6px 0 0;
+    float: right;
+    list-style: none;
+}
+
+#project-slides .slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+#project-slides .slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(../images/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+#project-slides .slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active { background-position: 0 -13px }
+
+#project-slides .slidesjs-pagination li a:hover { background-position: 0 -26px }
+
+#project-slides a:link, #project-slides a:visited { color: #333 }
+
+#project-slides a:hover, #project-slides a:active { color: #9e2020 }

@@ -19,9 +19,12 @@ $page_id = $wp_query->query_vars['page'];
                         'post_type' => 'galleryfolder'
                     );
                     $query = new WP_Query( $args );
+                    $ids = array();
                     while ( $query->have_posts() ) {
                         $query->the_post();
-                        echo '<li><a href="/aventura-projects/' . $tag_name . '/' . get_the_ID() . '">' . get_the_title() . '</a></li>';
+                        $id = get_the_ID();
+                        echo '<li><a href="/aventura-projects/' . $tag_name . '/' . $id . '">' . get_the_title() . '</a></li>';
+                        $ids[] = $id;
                     };
                 ?>
                 </ul>
@@ -30,6 +33,10 @@ $page_id = $wp_query->query_vars['page'];
             <div id="rightContent">
 
                 <?php
+                    if (!is_numeric($page_id) || $page_id <= 0) {
+                        $page_id = current($ids);
+                        $title = "Most Recent " . substr($project_tag_title, 0, -1);
+                    }
 
                     if (is_numeric($page_id) && $page_id > 0) {
                         $args = array(
@@ -38,8 +45,16 @@ $page_id = $wp_query->query_vars['page'];
                         );
                         $query = new WP_Query($args);
                         $query->the_post();
-?>
+                        if (isset($title)) {
+                        ?>
+                        <h5><?php echo $title; ?></h5>
+                        <?php
+                        } else {
+                        ?>
                         <h5><?php the_title(); ?></h5>
+                        <?php
+                        }
+                        ?>
 
                         <div id="project-slides">
                             <?php
@@ -54,7 +69,7 @@ $page_id = $wp_query->query_vars['page'];
                              */
                             foreach ($dir as $fileinfo) {
                                 if ($fileinfo->isFile()) {
-                                    $ext = $fileinfo->getExtension();
+                                    $ext = pathinfo($fileinfo->getFilename(), PATHINFO_EXTENSION);
                                     $thumb_path = "_cache/{$fileinfo->getBasename(".$ext")}-$size.$ext";
                                     $real_thumb_path = "{$path}_cache/{$fileinfo->getBasename(".$ext")}-$size.$ext";
                                     if (file_exists($real_thumb_path)) {
@@ -66,17 +81,16 @@ $page_id = $wp_query->query_vars['page'];
                             }
                             ?>
                         </div>
-<?php
+                <?php
                     } else {
-                        ?>
-                            <h5><?php echo $project_tag_title ?></h5>
-                        <?php
-                    }
-
                 ?>
-                
+                        <h5><?php echo "No Recent $project_tag_title"; ?></h5>
+                <?php
+                    }
+                ?>
             </div> 
         
         </div>
         
         <div style="clear:both;"></div>
+<?php get_footer(); ?>

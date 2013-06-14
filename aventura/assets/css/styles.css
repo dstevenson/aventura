@@ -10,6 +10,10 @@ body {
     color:#666;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 img {
   border-width: 0;
 }
